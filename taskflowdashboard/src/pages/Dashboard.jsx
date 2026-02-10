@@ -31,7 +31,7 @@ function Dashboard({ token, user }) {
   const fetchTasks = async () => {
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:5000/api/tasks', {
+      const response = await fetch('/api/tasks', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -89,8 +89,8 @@ function Dashboard({ token, user }) {
 
     try {
       const url = editingTask
-        ? `http://localhost:5000/api/tasks/${editingTask._id}`
-        : 'http://localhost:5000/api/tasks'
+        ? `/api/tasks/${editingTask._id}`
+        : '/api/tasks'
 
       const method = editingTask ? 'PUT' : 'POST'
 
@@ -134,7 +134,7 @@ function Dashboard({ token, user }) {
     if (!confirm('Are you sure you want to delete this task?')) return
 
     try {
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}`, {
+      const response = await fetch(`/api/tasks/${taskId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`
