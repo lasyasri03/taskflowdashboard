@@ -1,0 +1,6 @@
+2026-02-10T10:12:04.123Z INFO  [access] "POST /api/auth/register" 201 89ms - { userId: "USER_REDACTED", email: "lasyaparla@example.com" }
+2026-02-10T10:13:41.987Z INFO  [access] "POST /api/auth/login" 200 45ms - { userId: "USER_REDACTED", email: "lasyaparla@example.com" }
+2026-02-10T10:15:22.451Z INFO  [access] "GET /api/tasks?search=report" 200 30ms - { count: 3 }
+2026-02-10T10:16:05.002Z INFO  [access] "POST /api/tasks" 201 52ms - { taskId: "TASK_REDACTED", userId: "USER_REDACTED" }
+2026-02-10T10:18:33.210Z INFO  [access] "PUT /api/tasks/TASK_REDACTED" 200 48ms - { updated: true }
+2026-02-10T10:20:00.999Z INFO  [access] "DELETE /api/tasks/TASK_REDACTED" 204 25ms - {}

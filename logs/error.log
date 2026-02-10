@@ -1,0 +1,9 @@
+2026-02-10T10:14:02.321Z ERROR [error] "POST /api/auth/register" 500 120ms - Error: ValidationError: User validation failed: email: Path `email` is invalid
+    at ValidationError (mongoose_error)
+    at processTicksAndRejections (internal/process/next_tick)
+2026-02-10T10:17:47.654Z ERROR [error] "GET /api/tasks" 500 210ms - Error: MongoNetworkError: failed to connect to server [cluster0.xxxxx.mongodb.net:27017] (this is a sample error, connection string redacted)
+    at MongoNetworkError (mongodb_error)
+    at processTicksAndRejections (internal/process/next_tick)
+2026-02-10T10:19:11.888Z ERROR [error] "POST /api/auth/login" 401 18ms - Error: AuthenticationError: Invalid credentials
+    at authenticateUser (auth_controller)
+    at processTicksAndRejections (internal/process/next_tick)
